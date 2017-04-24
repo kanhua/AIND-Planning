@@ -4,7 +4,7 @@ Solving Air Cargo Problem 3 using astar_search with h_pg_levelsum...
 Expansions   Goal Tests   New Nodes
    2622        2624       23148   
 
-Plan length: 12  Time elapsed in seconds: 5852.707415870001
+Plan length: 12  Time elapsed in seconds: 7023.164730153
 Load(C1, P1, SFO)
 Load(C2, P2, JFK)
 Fly(P1, SFO, ATL)

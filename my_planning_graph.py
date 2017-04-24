@@ -598,19 +598,14 @@ class PlanningGraph():
 
         for goal in self.problem.goal:
 
-            goal_found = False
+            goal_node=PgNode_s(goal,True)
             found_in_level = None
 
             for s_level_num in range(max_level):
 
-                for node in self.s_levels[s_level_num]:
+                if goal_node in self.s_levels[s_level_num]:
 
-                    if node.literal == goal:
-                        goal_found = True
-                        found_in_level = s_level_num
-                        break
-
-                if goal_found:
+                    found_in_level = s_level_num
                     break
 
             level_sum += found_in_level
